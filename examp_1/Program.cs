@@ -1,15 +1,20 @@
 ﻿
-// Напишите программу, которая на вход принимает два числа и проверяет, 
-// является ли первое число квадратом второго.
+// Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, 
+//а какое меньшее
+ 
  int number1 = int.Parse(Console.ReadLine());
  int number2 = int.Parse(Console.ReadLine());
+ 
+ Console.WriteLine(number1);
+ Console.WriteLine(number2);
 
- int result = number1 * number1;
- if (number2 == result) 
+ if (number1 > number2) 
  {
-Console.WriteLine("первое число является квадратом второго");
+int max = number1;
  }
  else 
  {
-    Console.WriteLine("первое число не является квадратом второго");
- }
+   int max = number2;
+    }
+ Console.Write("max=", max);
+ 
